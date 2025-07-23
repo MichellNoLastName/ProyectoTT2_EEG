@@ -3504,13 +3504,17 @@ void config(void){
 
 void config_ADC(void) {
 
+    FVRCONbits.FVREN = 1;
+    FVRCONbits.ADFVR = 0b01;
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+
     ADCON0bits.CHS = 0b0011;
     ADCON0bits.ADON = 1;
 
 
     ADCON1bits.ADCS = 0b110;
     ADCON1bits.ADFM = 1;
-    ADCON1bits.ADPREF = 0b00;
+    ADCON1bits.ADPREF = 0b11;
 }
 
 void __attribute__((picinterrupt(("")))) ISR(void) {

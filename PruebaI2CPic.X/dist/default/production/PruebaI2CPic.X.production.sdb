@@ -11,19 +11,19 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"32 C:\Users\Admin\Documents\Trabajo Terminal\TT2\Trabajo Terminal\SOFTWARE\Proteus\PruebaI2CPic.X\main.c
+"32 C:\Users\Admin\Documents\Trabajo Terminal\TT2\Trabajo Terminal\SOFTWARE\Labview\EEG\PruebaI2CPic.X\main.c
 [v _config config `(v  1 e 1 0 ]
 "58
 [v _config_ADC config_ADC `(v  1 e 1 0 ]
-"69
+"73
 [v _ISR ISR `II(v  1 e 1 0 ]
-"94
+"98
 [v _blinkLed blinkLed `(v  1 e 1 0 ]
-"101
+"105
 [v _main main `(v  1 e 1 0 ]
 "430 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
-[s S210 . 1 `uc 1 RA0 1 0 :1:0 
+[s S244 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -31,65 +31,65 @@
 `uc 1 RA5 1 0 :1:5 
 ]
 "510
-[s S217 . 1 `uc 1 AN0 1 0 :1:0 
+[s S251 . 1 `uc 1 AN0 1 0 :1:0 
 `uc 1 AN1 1 0 :1:1 
 `uc 1 AN2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 AN3 1 0 :1:4 
 ]
-[s S223 . 1 `uc 1 CPS0 1 0 :1:0 
+[s S257 . 1 `uc 1 CPS0 1 0 :1:0 
 `uc 1 CPS1 1 0 :1:1 
 `uc 1 CPS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CPS3 1 0 :1:4 
 ]
-[s S229 . 1 `uc 1 C1INP 1 0 :1:0 
+[s S263 . 1 `uc 1 C1INP 1 0 :1:0 
 `uc 1 C1IN0N 1 0 :1:1 
 `uc 1 C1OUT 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 C1IN1N 1 0 :1:4 
 ]
-[s S235 . 1 `uc 1 DACOUT 1 0 :1:0 
+[s S269 . 1 `uc 1 DACOUT 1 0 :1:0 
 `uc 1 SRI 1 0 :1:1 
 `uc 1 SRQ 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 SRNQ 1 0 :1:5 
 ]
-[s S241 . 1 `uc 1 . 1 0 :1:0 
+[s S275 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 SCK 1 0 :1:1 
 `uc 1 T0CKI 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T1OSO 1 0 :1:4 
 `uc 1 T1CKI 1 0 :1:5 
 ]
-[s S248 . 1 `uc 1 . 1 0 :1:0 
+[s S282 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 SCL 1 0 :1:1 
 `uc 1 SDA 1 0 :1:2 
 `uc 1 nMCLR 1 0 :1:3 
 `uc 1 CLKR 1 0 :1:4 
 `uc 1 T1OSI 1 0 :1:5 
 ]
-[s S255 . 1 `uc 1 MDOUT 1 0 :1:0 
+[s S289 . 1 `uc 1 MDOUT 1 0 :1:0 
 `uc 1 MDMIN 1 0 :1:1 
 `uc 1 MDCIN1 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 MDCIN2 1 0 :1:4 
 ]
-[s S261 . 1 `uc 1 . 1 0 :2:0 
+[s S295 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 SDI 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 OSC2 1 0 :1:4 
 `uc 1 OSC1 1 0 :1:5 
 ]
-[s S267 . 1 `uc 1 . 1 0 :2:0 
+[s S301 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 FLT0 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CLKOUT 1 0 :1:4 
 `uc 1 CLKIN 1 0 :1:5 
 ]
-[u S273 . 1 `S210 1 . 1 0 `S217 1 . 1 0 `S223 1 . 1 0 `S229 1 . 1 0 `S235 1 . 1 0 `S241 1 . 1 0 `S248 1 . 1 0 `S255 1 . 1 0 `S261 1 . 1 0 `S267 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES273  1 e 1 @12 ]
-[s S144 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S307 . 1 `S244 1 . 1 0 `S251 1 . 1 0 `S257 1 . 1 0 `S263 1 . 1 0 `S269 1 . 1 0 `S275 1 . 1 0 `S282 1 . 1 0 `S289 1 . 1 0 `S295 1 . 1 0 `S301 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES307  1 e 1 @12 ]
+[s S178 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -99,8 +99,8 @@
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "737
-[u S153 . 1 `S144 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES153  1 e 1 @17 ]
+[u S187 . 1 `S178 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES187  1 e 1 @17 ]
 [s S24 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
@@ -119,7 +119,7 @@
 [v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
 "1807
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
-[s S74 . 1 `uc 1 ADON 1 0 :1:0 
+[s S108 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -128,19 +128,19 @@
 `uc 1 CHS4 1 0 :1:6 
 ]
 "1856
-[s S82 . 1 `uc 1 . 1 0 :1:0 
+[s S116 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADGO 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S86 . 1 `uc 1 . 1 0 :1:0 
+[s S120 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S89 . 1 `uc 1 . 1 0 :1:0 
+[s S123 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[u S92 . 1 `S74 1 . 1 0 `S82 1 . 1 0 `S86 1 . 1 0 `S89 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES92  1 e 1 @157 ]
-[s S116 . 1 `uc 1 ADPREF0 1 0 :1:0 
+[u S126 . 1 `S108 1 . 1 0 `S116 1 . 1 0 `S120 1 . 1 0 `S123 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES126  1 e 1 @157 ]
+[s S150 . 1 `uc 1 ADPREF0 1 0 :1:0 
 `uc 1 ADPREF1 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS0 1 0 :1:4 
@@ -149,19 +149,34 @@
 `uc 1 ADFM 1 0 :1:7 
 ]
 "1937
-[s S124 . 1 `uc 1 ADPREF 1 0 :2:0 
+[s S158 . 1 `uc 1 ADPREF 1 0 :2:0 
 `uc 1 . 1 0 :2:2 
 `uc 1 ADCS 1 0 :3:4 
 ]
-[u S128 . 1 `S116 1 . 1 0 `S124 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES128  1 e 1 @158 ]
+[u S162 . 1 `S150 1 . 1 0 `S158 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES162  1 e 1 @158 ]
+[s S74 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"2206
+[s S83 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S86 . 1 `S74 1 . 1 0 `S83 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES86  1 e 1 @279 ]
 "2633
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "3247
 [v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
 "3285
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
-[s S165 . 1 `uc 1 BF 1 0 :1:0 
+[s S199 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -171,8 +186,8 @@
 `uc 1 SMP 1 0 :1:7 
 ]
 "3383
-[u S174 . 1 `S165 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES174  1 e 1 @532 ]
+[u S208 . 1 `S199 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES208  1 e 1 @532 ]
 [s S43 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
@@ -187,7 +202,7 @@
 ]
 [u S54 . 1 `S43 1 . 1 0 `S52 1 . 1 0 ]
 [v _SSP1CON1bits SSP1CON1bits `VES54  1 e 1 @533 ]
-[s S188 . 1 `uc 1 SEN 1 0 :1:0 
+[s S222 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -197,8 +212,8 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "3709
-[u S197 . 1 `S188 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES197  1 e 1 @534 ]
+[u S231 . 1 `S222 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES231  1 e 1 @534 ]
 "5449
 [v _GIE GIE `VEb  1 e 0 @95 ]
 "5710
@@ -207,30 +222,30 @@
 [v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
 "5905
 [v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
-"30 C:\Users\Admin\Documents\Trabajo Terminal\TT2\Trabajo Terminal\SOFTWARE\Proteus\PruebaI2CPic.X\main.c
+"30 C:\Users\Admin\Documents\Trabajo Terminal\TT2\Trabajo Terminal\SOFTWARE\Labview\EEG\PruebaI2CPic.X\main.c
 [v _received_data received_data `i  1 e 2 0 ]
-"101
+"105
 [v _main main `(v  1 e 1 0 ]
 {
-"107
+"111
 } 0
 "58
 [v _config_ADC config_ADC `(v  1 e 1 0 ]
 {
-"67
+"71
 } 0
 "32
 [v _config config `(v  1 e 1 0 ]
 {
 "56
 } 0
-"94
+"98
 [v _blinkLed blinkLed `(v  1 e 1 0 ]
 {
-"99
+"103
 } 0
-"69
+"73
 [v _ISR ISR `II(v  1 e 1 0 ]
 {
-"92
+"96
 } 0

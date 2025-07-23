@@ -44,7 +44,7 @@ void config(void){
     
     // Configuración del MSSP para modo esclavo I2C
     SSP1CON1bits.SSPM = 0b0110; // Modo I2C esclavo con direccion 7 bits
-    //Usadas: 0x12,16
+    //Usadas: 0x10,0x20,0x30,0x40,0x50,0x60,0x68,0x70,0x76
     SSP1ADD = 0x76;             // Dirección del esclavo
     SSP1CON1bits.SSPEN = 1;     // Habilitar el módulo MSSP
 
@@ -57,13 +57,17 @@ void config(void){
 
 void config_ADC(void) {
     // Configuración del canal ADC y habilitación del módulo ADC
+    FVRCONbits.FVREN = 1;       // Encender FVR
+    FVRCONbits.ADFVR = 0b01;    // 1.024 V como referencia ADC
+    __delay_ms(5);              // Esperar estabilización FVR (mínimo 1 ms recomendado)
+    
     ADCON0bits.CHS = 0b0011;  // Seleccionar el canal AN3 (RA4)
     ADCON0bits.ADON = 1;      // Habilitar el ADC
     
     // Configuración del ADCON1
     ADCON1bits.ADCS = 0b110;  // Prescaler FOSC/64
     ADCON1bits.ADFM = 1;      // Justificación a la derecha
-    ADCON1bits.ADPREF = 0b00; // Referencia de voltaje VDD
+    ADCON1bits.ADPREF = 0b11; // Referencia de voltaje VDD
 }
 
 void __interrupt() ISR(void) {

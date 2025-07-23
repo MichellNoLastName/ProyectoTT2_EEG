@@ -52,7 +52,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5449
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 5449: extern volatile __bit GIE __attribute__((address(0x5F)));
 [v _GIE `Vb ~T0 @X0 0 e@95 ]
-"1833
+"2191
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 2191:     struct {
+[s S119 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S119 . ADFVR0 ADFVR1 CDAFVR0 CDAFVR1 TSRNG TSEN FVRRDY FVREN ]
+"2201
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 2201:     struct {
+[s S120 :2 `uc 1 :2 `uc 1 ]
+[n S120 . ADFVR CDAFVR ]
+"2190
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 2190: typedef union {
+[u S118 `S119 1 `S120 1 ]
+[n S118 . . . ]
+"2206
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 2206: extern volatile FVRCONbits_t FVRCONbits __attribute__((address(0x117)));
+[v _FVRCONbits `VS118 ~T0 @X0 0 e@279 ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"1833 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 1833:     struct {
 [s S100 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S100 . ADON GO_nDONE CHS0 CHS1 CHS2 CHS3 CHS4 ]
@@ -181,10 +200,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "510
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 510: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
 [v _PORTAbits `VS33 ~T0 @X0 0 e@12 ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
 [p mainexit ]
 "55 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12f1822.h: 55: __asm("INDF0 equ 00h");
@@ -583,197 +598,206 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `i
 ]
 "32
-[; ;main.c: 32:     ADCON0bits.CHS = 0b0011;
+[; ;main.c: 32:     FVRCONbits.FVREN = 1;
 [v _config `(v ~T0 @X0 1 ef ]
 {
 [e :U _config ]
 [f ]
 "33
-[; ;main.c: 33:     ADCON0bits.ADON = 1;
+[; ;main.c: 33:     FVRCONbits.ADFVR = 0b01;
 [e = _OSCCON -> -> 120 `i `uc ]
 "34
-[; ;main.c: 34: 
+[; ;main.c: 34:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e = _OSCTUNE -> -> 0 `i `uc ]
 "36
-[; ;main.c: 36:     ADCON1bits.ADCS = 0b110;
+[; ;main.c: 36:     ADCON0bits.CHS = 0b0011;
 [e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
 "37
-[; ;main.c: 37:     ADCON1bits.ADFM = 1;
+[; ;main.c: 37:     ADCON0bits.ADON = 1;
 [e = . . _TRISAbits 0 1 -> -> 1 `i `uc ]
 "38
-[; ;main.c: 38:     ADCON1bits.ADPREF = 0b00;
+[; ;main.c: 38: 
 [e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
 "39
-[; ;main.c: 39: }
+[; ;main.c: 39: 
 [e = . . _TRISAbits 0 4 -> -> 1 `i `uc ]
 "41
-[; ;main.c: 41: void __attribute__((picinterrupt(("")))) ISR(void) {
+[; ;main.c: 41:     ADCON1bits.ADFM = 1;
 [e = _ANSELA -> -> 16 `i `uc ]
 "43
-[; ;main.c: 43:     if(PIR1bits.SSP1IF == 1){
+[; ;main.c: 43: }
 [e = _PORTA -> -> 0 `i `uc ]
 "46
-[; ;main.c: 46:             received_data = SSP1BUF;
+[; ;main.c: 46: 
 [e = . . _SSP1CON1bits 1 0 -> -> 6 `i `uc ]
 "48
-[; ;main.c: 48:             if(received_data == 0x00 ){;}
+[; ;main.c: 48:         PIR1bits.SSP1IF = 0;
 [e = _SSP1ADD -> -> 118 `i `uc ]
 "49
-[; ;main.c: 49:             if(SSP1STATbits.R_nW == 1){
+[; ;main.c: 49:         if(SSP1STATbits.D_nA == 0){
 [e = . . _SSP1CON1bits 0 5 -> -> 1 `i `uc ]
 "52
-[; ;main.c: 52:             }
+[; ;main.c: 52:             if(received_data == 0x00 ){;}
 [e = _SSP1IF -> -> 0 `i `b ]
 "53
-[; ;main.c: 53:         }
+[; ;main.c: 53:             if(SSP1STATbits.R_nW == 1){
 [e = _SSP1IE -> -> 1 `i `b ]
 "54
-[; ;main.c: 54:         else{
+[; ;main.c: 54:                 SSP1BUF = ADRESH;
 [e = _PEIE -> -> 1 `i `b ]
 "55
-[; ;main.c: 55:             if(SSP1STATbits.R_nW == 1 && SSP1CON2bits.ACKSTAT == 0){
+[; ;main.c: 55:                 SSP1CON1bits.CKP = 1;
 [e = _GIE -> -> 1 `i `b ]
 "56
-[; ;main.c: 56:                 SSP1BUF = ADRESL;
+[; ;main.c: 56:             }
 [e :UE 274 ]
 }
 "58
-[; ;main.c: 58:             }
+[; ;main.c: 58:         else{
 [v _config_ADC `(v ~T0 @X0 1 ef ]
 {
 [e :U _config_ADC ]
 [f ]
 "60
-[; ;main.c: 60:                 received_data = SSP1BUF;
-[e = . . _ADCON0bits 1 2 -> -> 3 `i `uc ]
+[; ;main.c: 60:                 SSP1BUF = ADRESL;
+[e = . . _FVRCONbits 0 7 -> -> 1 `i `uc ]
 "61
-[; ;main.c: 61:             }
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 61:                 SSP1CON1bits.CKP = 1;
+[e = . . _FVRCONbits 1 0 -> -> 1 `i `uc ]
+"62
+[; ;main.c: 62:             }
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "64
-[; ;main.c: 64: }
-[e = . . _ADCON1bits 1 2 -> -> 6 `i `uc ]
+[; ;main.c: 64:                 received_data = SSP1BUF;
+[e = . . _ADCON0bits 1 2 -> -> 3 `i `uc ]
 "65
-[; ;main.c: 65: 
+[; ;main.c: 65:             }
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"68
+[; ;main.c: 68: }
+[e = . . _ADCON1bits 1 2 -> -> 6 `i `uc ]
+"69
+[; ;main.c: 69: 
 [e = . . _ADCON1bits 0 6 -> -> 1 `i `uc ]
-"66
-[; ;main.c: 66: void blinkLed(void){
-[e = . . _ADCON1bits 1 0 -> -> 0 `i `uc ]
-"67
-[; ;main.c: 67:     PORTAbits.RA0 = 0;
+"70
+[; ;main.c: 70: void blinkLed(void){
+[e = . . _ADCON1bits 1 0 -> -> 3 `i `uc ]
+"71
+[; ;main.c: 71:     PORTAbits.RA0 = 0;
 [e :UE 275 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"69
-[; ;main.c: 69:     PORTAbits.RA0 = 1;
+"73
+[; ;main.c: 73:     PORTAbits.RA0 = 1;
 [v _ISR `(v ~T1 @X0 1 ef ]
 {
 [e :U _ISR ]
 [f ]
-"71
-[; ;main.c: 71: }
+"75
+[; ;main.c: 75: }
 [e $ ! == -> . . _PIR1bits 0 3 `i -> 1 `i 277  ]
 {
-"72
-[; ;main.c: 72: 
+"76
+[; ;main.c: 76: 
 [e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
-"73
-[; ;main.c: 73: void main(void) {
+"77
+[; ;main.c: 77: void main(void) {
 [e $ ! == -> . . _SSP1STATbits 0 5 `i -> 0 `i 278  ]
 {
-"74
-[; ;main.c: 74:     config();
+"78
+[; ;main.c: 78:     config();
 [e = _received_data -> _SSP1BUF `i ]
-"75
-[; ;main.c: 75:     config_ADC();
+"79
+[; ;main.c: 79:     config_ADC();
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"76
-[; ;main.c: 76:     while(1){
+"80
+[; ;main.c: 80:     while(1){
 [e $ ! == _received_data -> 0 `i 279  ]
 {
 }
 [e :U 279 ]
-"77
-[; ;main.c: 77:         blinkLed();
+"81
+[; ;main.c: 81:         blinkLed();
 [e $ ! == -> . . _SSP1STATbits 0 2 `i -> 1 `i 280  ]
 {
-"78
-[; ;main.c: 78:     }
+"82
+[; ;main.c: 82:     }
 [e = _SSP1BUF _ADRESH ]
-"79
-[; ;main.c: 79: }
+"83
+[; ;main.c: 83: }
 [e = . . _SSP1CON1bits 0 4 -> -> 1 `i `uc ]
-"80
+"84
 }
 [e :U 280 ]
-"81
+"85
 }
 [e $U 281  ]
-"82
+"86
 [e :U 278 ]
 {
-"83
+"87
 [e $ ! && == -> . . _SSP1STATbits 0 2 `i -> 1 `i == -> . . _SSP1CON2bits 0 6 `i -> 0 `i 282  ]
 {
-"84
-[e = _SSP1BUF _ADRESL ]
-"85
-[e = . . _SSP1CON1bits 0 4 -> -> 1 `i `uc ]
-"86
-}
-[e :U 282 ]
-"87
-[e $ ! == -> . . _SSP1STATbits 0 2 `i -> 0 `i 283  ]
-{
 "88
-[e = _received_data -> _SSP1BUF `i ]
+[e = _SSP1BUF _ADRESL ]
 "89
-}
-[e :U 283 ]
+[e = . . _SSP1CON1bits 0 4 -> -> 1 `i `uc ]
 "90
 }
-[e :U 281 ]
+[e :U 282 ]
 "91
+[e $ ! == -> . . _SSP1STATbits 0 2 `i -> 0 `i 283  ]
+{
+"92
+[e = _received_data -> _SSP1BUF `i ]
+"93
+}
+[e :U 283 ]
+"94
+}
+[e :U 281 ]
+"95
 }
 [e :U 277 ]
-"92
+"96
 [e :UE 276 ]
 }
-"94
+"98
 [v _blinkLed `(v ~T0 @X0 1 ef ]
 {
 [e :U _blinkLed ]
 [f ]
-"95
-[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
-"96
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"97
-[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
-"98
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "99
+[e = . . _PORTAbits 0 0 -> -> 0 `i `uc ]
+"100
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"101
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+"102
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"103
 [e :UE 284 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"101
+"105
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"102
+"106
 [e ( _config ..  ]
-"103
+"107
 [e ( _config_ADC ..  ]
-"104
+"108
 [e :U 287 ]
 {
-"105
+"109
 [e ( _blinkLed ..  ]
-"106
+"110
 }
 [e :U 286 ]
 [e $U 287  ]
 [e :U 288 ]
-"107
+"111
 [e :UE 285 ]
 }
