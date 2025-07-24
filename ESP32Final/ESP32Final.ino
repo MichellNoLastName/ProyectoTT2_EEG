@@ -73,7 +73,7 @@ void sendBTData(unsigned int values[], int count) {
     }
   }
   SerialBT.println(btMessage);
-  //Serial.println(btMessage);
+  Serial.println(btMessage);
 }
 
 // ---------- Setup ----------
